@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { MatCommonModule, MatStepperModule, MatDialogModule } from '@angular/material';
 
 import { MatStepperNextIf } from './stepper';
+import { MatDialogForceClose } from './dialog';
 
 @NgModule({
     imports: [
@@ -13,9 +14,11 @@ import { MatStepperNextIf } from './stepper';
     ],
     exports: [
         MatStepperNextIf,
+        MatDialogForceClose,
     ],
     declarations: [
-        MatStepperNextIf
+        MatStepperNextIf,
+        MatDialogForceClose,
     ],
 })
 export class CustomDirectiveModule {}
