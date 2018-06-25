@@ -52,3 +52,55 @@ export class MatStepperNextIf {
 // #endregion
 
 }
+
+/**
+ * matStepperPrevious extension Directive
+ */
+@Directive({
+    selector: 'button[matStepperPreviousIf]',
+    providers: [ MatStepper ]
+})
+export class MatStepperPreviousIf {
+
+// #region fields
+
+    /**  */
+    @HostBinding('type')
+    type = 'submit';
+
+    /**  */
+    @Input('matStepperPreviousIf')
+    flag = true;
+
+    /**  */
+    @Output('matStepperPreviousElseHandler')
+    elseHandler = new EventEmitter<any>();
+
+// #endregion
+
+// #region init/destroy
+
+    /**
+     *
+     * @param _stepper
+     */
+    constructor(public _stepper: MatStepper) {}
+
+// #endregion
+
+// #region methods
+
+    /**
+     * Button click.
+     */
+    @HostListener('click')
+    onClick(): void {
+        if (this.flag)
+            this._stepper.previous();
+        else
+            this.elseHandler.emit();
+    }
+
+// #endregion
+
+}

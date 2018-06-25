@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { MatCommonModule, MatStepperModule, MatDialogModule } from '@angular/material';
 
-import { MatStepperNextIf } from './stepper';
+import { MatStepperNextIf, MatStepperPreviousIf } from './stepper';
 import { MatDialogForceClose } from './dialog';
 
 @NgModule({
@@ -14,10 +14,12 @@ import { MatDialogForceClose } from './dialog';
     ],
     exports: [
         MatStepperNextIf,
+        MatStepperPreviousIf,
         MatDialogForceClose,
     ],
     declarations: [
         MatStepperNextIf,
+        MatStepperPreviousIf,
         MatDialogForceClose,
     ],
 })
