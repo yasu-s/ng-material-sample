@@ -12,6 +12,9 @@ export class AppComponent {
     /** タイトル */
     title = 'app';
 
+    /** */
+    stepperIndex = 0;
+
 // #endregion
 
 // #region methods
@@ -21,6 +24,13 @@ export class AppComponent {
      */
     onClick(): void {
         alert('hoge');
+    }
+
+    /**
+     * 最初のステッパーに移動
+     */
+    moveInitStepper(): void {
+        this.stepperIndex = 0;
     }
 
 // #endregion

@@ -8,4 +8,31 @@
     <mat-tab label="Tab 2">
         <button (click)="onClick()">hoge</button>
     </mat-tab>
+    <mat-tab label="Tab 3">
+        <mat-horizontal-stepper [linear]="true" [(selectedIndexTwoWay)]="stepperIndex">
+            <mat-step>
+                <ng-template matStepLabel>Stepper1</ng-template>
+                <div>Index: {{ stepperIndex }}</div>
+                <div>
+                    <button mat-button matStepperNext>Next</button>
+                </div>
+            </mat-step>
+            <mat-step>
+                <ng-template matStepLabel>Stepper2</ng-template>
+                <div>Index: {{ stepperIndex }}</div>
+                <div>
+                    <button mat-button matStepperPrevious>Back</button>
+                    <button mat-button matStepperNext>Next</button>
+                </div>
+            </mat-step>
+            <mat-step>
+                <ng-template matStepLabel>Stepper3</ng-template>
+                <div>Index: {{ stepperIndex }}</div>
+                <div>
+                    <button mat-button matStepperPrevious>Back</button>
+                    <button mat-button (click)="moveInitStepper()">Stepper1</button>
+                </div>
+            </mat-step>
+        </mat-horizontal-stepper>
+    </mat-tab>
 </mat-tab-group>

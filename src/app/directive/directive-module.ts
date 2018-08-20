@@ -5,7 +5,7 @@ import {
     MatTableModule, MatPaginatorModule
 } from '@angular/material';
 
-import { MatStepperNextIf, MatStepperPreviousIf } from './stepper';
+import { MatStepperNextIf, MatStepperPreviousIf, MatStepperSelectedIndexTwoWayDirective } from './stepper';
 import { MatDialogForceClose } from './dialog';
 import { MatPaginatorDataSource } from './paginator';
 
@@ -23,13 +23,14 @@ import { MatPaginatorDataSource } from './paginator';
         MatStepperPreviousIf,
         MatDialogForceClose,
         MatPaginatorDataSource,
-
+        MatStepperSelectedIndexTwoWayDirective,
     ],
     declarations: [
         MatStepperNextIf,
         MatStepperPreviousIf,
         MatDialogForceClose,
         MatPaginatorDataSource,
+        MatStepperSelectedIndexTwoWayDirective,
     ],
 })
 export class CustomDirectiveModule {}

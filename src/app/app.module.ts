@@ -18,6 +18,7 @@ import { AppComponent } from './app.component';
         MatStepperModule,
         MatDialogModule,
         MatStepperModule,
+        CustomDirectiveModule,
     ],
     providers: [],
     bootstrap: [AppComponent]
