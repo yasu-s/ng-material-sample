@@ -1,8 +1,8 @@
 {
-    "recommendations": [
-        "msjsdiag.debugger-for-chrome",
-        "eg2.tslint",
-        "Angular.ng-template",
-        "MariusAlchimavicius.json-to-ts"
-    ]
+  "recommendations": [
+    "msjsdiag.debugger-for-chrome",
+    "ms-vscode.vscode-typescript-tslint-plugin",
+    "Angular.ng-template",
+    "MariusAlchimavicius.json-to-ts"
+  ]
 }
