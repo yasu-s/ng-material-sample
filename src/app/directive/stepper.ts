@@ -3,7 +3,7 @@ import {
     OnInit, OnDestroy
 } from '@angular/core';
 import { CdkStepper } from '@angular/cdk/stepper';
-import { MatStepper } from '@angular/material';
+import { MatStepper } from '@angular/material/stepper';
 import { takeUntil } from 'rxjs/operators';
 
 /**

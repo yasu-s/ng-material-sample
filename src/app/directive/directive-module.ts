@@ -1,9 +1,10 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import {
-    MatCommonModule, MatStepperModule, MatDialogModule,
-    MatTableModule, MatPaginatorModule
-} from '@angular/material';
+import { MatCommonModule } from '@angular/material/core';
+import { MatDialogModule } from '@angular/material/dialog';
+import { MatPaginatorModule } from '@angular/material/paginator';
+import { MatStepperModule } from '@angular/material/stepper';
+import { MatTableModule } from '@angular/material/table';
 
 import { MatStepperNextIf, MatStepperPreviousIf, MatStepperSelectedIndexTwoWayDirective } from './stepper';
 import { MatDialogForceClose } from './dialog';

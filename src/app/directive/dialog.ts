@@ -5,7 +5,7 @@ import {
     Optional,
     ElementRef,
 } from '@angular/core';
-import { MatDialog, MatDialogRef } from '@angular/material';
+import { MatDialog, MatDialogRef } from '@angular/material/dialog';
 
 /**
  * MatDialog force close Directive

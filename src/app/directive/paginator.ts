@@ -1,6 +1,7 @@
 import { Directive, Input, Output, EventEmitter, HostListener, HostBinding } from '@angular/core';
 import { DataSource } from '@angular/cdk/table';
-import { MatPaginator, MatTableDataSource } from '@angular/material';
+import { MatPaginator } from '@angular/material/paginator';
+import { MatTableDataSource } from '@angular/material/table';
 
 
 /**
